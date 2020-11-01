@@ -1,5 +1,6 @@
 function prompt 
   { 
     $host.ui.rawui.WindowTitle = "$((Get-Item -Path $pwd).Name) | $pwd";
-    return "> ";
+    Write-Host ">" -foreground red -nonewline;
+    return " ";
   }
